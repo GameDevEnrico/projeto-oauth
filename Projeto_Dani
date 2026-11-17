@@ -1,0 +1,96 @@
+projeto-oauth/
+│
+├── index.html
+├── login-firebase.html
+├── login-supabase.html
+├── home.html
+│
+├── css/
+│   └── style.css
+│
+└── js/
+    ├── firebase-config.js
+    ├── supabase-config.js
+    ├── login-firebase.js
+    ├── login-supabase.js
+    └── home.js
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Autenticação com Google</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main class="container">
+    <h1>Autenticação com Google</h1>
+
+    <p>Escolha a plataforma que deseja utilizar:</p>
+
+    <a class="botao" href="login-firebase.html">
+      Entrar com Firebase
+    </a>
+
+    <a class="botao" href="login-supabase.html">
+      Entrar com Supabase
+    </a>
+  </main>
+</body>
+</html>
+  margin: 0;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #f1f5f9;
+  color: #1e293b;
+}
+
+.container {
+  max-width: 500px;
+  margin: 80px auto;
+  padding: 30px;
+  background-color: white;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 12px #00000015;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+p {
+  line-height: 1.6;
+}
+
+.botao {
+  display: block;
+  width: 100%;
+  margin: 12px 0;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  background-color: #2563eb;
+  color: white;
+  font: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.botao:hover {
+  background-color: #1d4ed8;
+}
+
+.link-voltar {
+  display: inline-block;
+  margin-top: 15px;
+  color: #2563eb;
+}
+
+#mensagem {
+  margin-top: 15px;
+}
+
+[hidden] {
+  display: none !important;
+}
